@@ -24,7 +24,7 @@ class Solution {
             int diff = target - nums[i];
             
             if (hashmap.containsKey(diff)) {
-                return new int[]{i, hashmap.get(diff)};
+                return new int[]{hashmap.get(diff), i};
             }    
             hashmap.put(nums[i], i);
         }
